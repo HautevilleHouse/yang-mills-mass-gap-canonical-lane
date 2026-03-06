@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Yang-Mills Existence and Mass Gap via Self-Adjoint Gauge Persistence"
+message: "If you use this workspace, cite the manuscript and theorem notes."
+type: software
+authors:
+  - name: "HautevilleHouse"
+date-released: 2026-03-05
+repository-code: "https://github.com/HautevilleHouse/yang-mills-mass-gap-canonical-lane"
+url: "https://github.com/HautevilleHouse/yang-mills-mass-gap-canonical-lane"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18876069"
+license: MIT
+keywords:
+  - yang-mills
+  - mass-gap
+  - quantum-field-theory
+  - spectral-theory
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Yang-Mills Existence and Mass Gap via Self-Adjoint Gauge Persistence"
+  authors:
+    - name: "HautevilleHouse"
+  date: 2026-03-05
+  doi: "10.5281/zenodo.18876069"
