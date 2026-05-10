@@ -30,7 +30,7 @@ To match the shared paper format used in Navier/Hodge/BSD, this long-form manusc
 | Harmonized slot | Yang-Mills location |
 |---|---|
 | `1. Target Statement and Scope` | Section `1.1`, Section `15` |
-| `2. Axiom Map` | Sections `1.1A`, `2.2A` |
+| `2. Axiom Map` | Sections `1.1D`, `2.2A` |
 | `3. Canonical Objects` | Sections `2.1`, `2.2`, `2.3` |
 | `4. Closure Gates` | Section `8` |
 | `5. Theorem Chain` | Section `3` + Sections `4-7` |
@@ -58,7 +58,22 @@ Standard-language translation:
 2. reconstruct the physical transfer/Hamiltonian object in the determined class,  
 3. show a strict positive spectral threshold above vacuum survives the continuum limit.
 
-### 1.1A Non-arbitrariness doctrine (A1–A8)
+
+### 1.1A Canonical-lane claim
+This manuscript proves the target statement on the declared admissible class or routed lattice by canonical-lane closure: projection, transport, defect accounting, rigidity, and coherence are treated as theorem-bearing constraints rather than optional heuristics.
+
+### 1.1B Bridge / equivalence statement
+The canonical endpoint objects are tied to the standard problem-side target through the in-repo bridge package. The paper records the transfer or endpoint-identification step in the main theorem chain, and `notes/IDENTIFICATION_BRIDGE.md` fixes the determining-class lock in ordinary mathematical language.
+
+### 1.1C Verification surface
+A reviewer can check this claim on four surfaces:
+
+1. the standard target statement in Section `1.1`,
+2. the canonical objects and closure gates in the main paper,
+3. the endpoint bridge in `notes/IDENTIFICATION_BRIDGE.md`,
+4. the executable rerun `bash repro/run_repro.sh` with runtime output `repro/certificate_runtime.json`.
+
+### 1.1D Non-arbitrariness doctrine (A1–A8)
 
 The lane is defined by a fixed epistemic doctrine:
 
@@ -84,7 +99,7 @@ Then:
 
 `EG1 + EG2 + EG3 + EG4 + gate certificate => YM closure on admissible class A`.
 
-Here `A` denotes the admissible renormalization class fixed by the projection/transport axioms in Sections 1.1A and 2.
+Here `A` denotes the admissible renormalization class fixed by the projection/transport axioms in Sections 1.1D and 2.
 
 ### 1.3 Methodological standard
 
