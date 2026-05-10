@@ -46,7 +46,7 @@ This keeps cross-project structure aligned while preserving Yang-Mills-specific 
 
 ## 1. Program and Architectural Principle
 
-### 1.1 Yang-Mills target in this program
+### 1.1 Target statement
 
 Target statement: for compact simple `G`, construct a nontrivial quantum Yang-Mills theory on `R^4` satisfying the standard consistency/positivity class and prove:
 
@@ -98,7 +98,7 @@ No hidden dependency layer is allowed in claim-bearing statements.
 
 ---
 
-## 2. Canonical Renormalization State and Geometry
+## 2. Canonical Objects and Renormalization Geometry
 
 ### 2.1 State variables
 
