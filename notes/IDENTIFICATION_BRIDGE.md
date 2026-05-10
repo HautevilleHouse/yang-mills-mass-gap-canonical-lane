@@ -20,6 +20,11 @@ Lock conditions (working form):
 
 If two candidate limit objects satisfy the same lock conditions on `C_det`, they are identified as the same physical class representative.
 
+This note records the bridge assumptions used by the standard physical statement:
+
+- `YM_EQ1`: `C_det` is determining on the reconstructed admissible class,
+- `YM_EQ2`: raw positivity-to-gap transfer holds with explicit `c_gap > 0`, `e_gap >= 0`.
+
 ## Lemma Chain and Proof Payload
 
 ### Lemma ID.1 (lock persistence under extraction)
@@ -63,3 +68,7 @@ Therefore:
 `eps_coh = 0`.
 
 This value is promoted to theorem-level in the constants registry for strict mode `Y_G6`.
+
+## Status
+
+This note discharges lock persistence and records the conditional uniqueness step used by the physical endpoint statement. The standard Yang-Mills existence/mass-gap claim still explicitly uses `YM_EQ1` and `YM_EQ2`; canonical-lane closure does not silently absorb them.

@@ -63,7 +63,12 @@ Standard-language translation:
 This manuscript proves the target statement on the declared admissible class or routed lattice by canonical-lane closure: projection, transport, defect accounting, rigidity, and coherence are treated as theorem-bearing constraints rather than optional heuristics.
 
 ### 1.1B Bridge / equivalence statement
-The canonical endpoint objects are tied to the standard problem-side target through the in-repo bridge package. The paper records the transfer or endpoint-identification step in the main theorem chain, and `notes/IDENTIFICATION_BRIDGE.md` fixes the determining-class lock in ordinary mathematical language.
+The canonical endpoint objects are tied to the standard problem-side target through the in-repo bridge package. The paper records the endpoint-identification and gap-transfer steps in the main theorem chain, but the standard physical statement still uses two explicit bridge assumptions:
+
+- `YM_EQ1`: the determining class `C_det` is genuinely determining on the reconstructed admissible class,
+- `YM_EQ2`: the raw positivity-to-gap transfer inequality holds with explicit `c_gap > 0`, `e_gap >= 0`.
+
+`notes/IDENTIFICATION_BRIDGE.md` records this bridge layer in ordinary mathematical language.
 
 ### 1.1C Verification surface
 A reviewer can check this claim on four surfaces:
@@ -204,7 +209,7 @@ These are represented in:
 | Closure architecture (`YM1–YM8`, `EG1–EG4`) | complete as theorem interface |
 | Executable guard and lane-gate logic | implemented (`scripts/ym_closure_guard.py`) |
 | Theorem-level constants for all gates | instantiated in current registry (current certificate PASS) |
-| Classical-target alignment status | embedded in Appendix E lock chain |
+| Standard physical bridge status | explicit through `YM_EQ1`, `YM_EQ2` in Section `6.4` and Appendix `E` |
 
 ---
 
@@ -249,7 +254,7 @@ Translation policy used in this manuscript:
 
 1. every normalized gate constant is paired with a raw constant definition;
 2. every gate claim is restated in raw inequality form;
-3. endpoint claim is delivered by the in-paper determining-class lock and spectral-floor transfer.
+3. the standard physical endpoint claim is separated from canonical-lane closure and uses the explicit bridge assumptions `YM_EQ1`, `YM_EQ2`.
 
 ---
 
@@ -419,13 +424,17 @@ Any bad limit is excluded via one of:
 
 ### 6.3 Gap transfer
 
-Final bridge is:
+Canonical-lane endpoint reconstruction supplies the bridge quantity `rho_os`. The further physical gap transfer is:
 
 `rho_os > 0 => m_gap_lower > 0` on reconstructed spectral object.
 
 This is the gate transition `Y_G4 -> Y_G5`.
 
-### 6.4 Raw positivity-to-gap transfer assumptions
+### 6.4 Explicit bridge assumptions for the standard physical statement
+
+`YM_EQ1` (determining-class adequacy): the chosen test-observable class `C_det` is genuinely determining on the reconstructed admissible class.
+
+`YM_EQ2` (raw positivity-to-gap transfer): there exist explicit `c_gap > 0`, `e_gap >= 0` such that the reconstructed raw spectral floor obeys the transfer inequality below.
 
 Define raw constants:
 
@@ -450,7 +459,7 @@ prove explicit positive `c_gap,e_gap` on the reconstructed class.
 
 ### Theorem 7.1 (Admissible-class reduction)
 
-If `EG1–EG4` hold in theorem form on admissible class `A` and all closure gates pass, then the `YM1–YM8` chain closes and yields strict positive mass-gap persistence.
+If `EG1–EG4` hold in theorem form on admissible class `A` and all closure gates pass, then the `YM1–YM8` chain closes and yields canonical-lane Yang-Mills closure on `A`. If, in addition, bridge assumptions `YM_EQ1` and `YM_EQ2` hold, then the standard Yang-Mills existence + positive mass-gap statement follows.
 
 ### Proof
 
@@ -459,6 +468,7 @@ If `EG1–EG4` hold in theorem form on admissible class `A` and all closure gate
 3. `EG3` gives first-failure compactness scaffold (`YM4`).  
 4. `EG4` excludes bad limits and identifies admissible endpoint (`YM5–YM8`).  
 5. Strict margin gate (`Y_GM`) converts package inequalities into closure certificate.
+6. Bridge assumptions `YM_EQ1`, `YM_EQ2` promote the lane endpoint statement to the standard physical mass-gap statement.
 
 Assume by contradiction that `YM1–YM8` fail while `EG1–EG4` and all gates pass.
 Then there exists a first-failure sequence. By `EG3`, extract a normalized
@@ -515,11 +525,13 @@ Assume:
 1. `EG1–EG4` in theorem form with strict positive constants,  
 2. gate tuple `Y_G1..Y_G6,Y_GM = PASS`.
 
-Then Yang-Mills closure holds on admissible class `A`:
+Then canonical-lane Yang-Mills closure holds on admissible class `A`:
 
 - admissible continuation persists,  
 - bad-limit contradiction closes,  
-- reconstructed spectrum has strict positive lower non-vacuum threshold.
+- reconstructed endpoint data carries the strict positive lane spectral-floor quantities recorded by the gate package.
+
+If, in addition, `YM_EQ1` and `YM_EQ2` hold, then the standard Yang-Mills existence + positive mass-gap statement follows.
 
 ### Expanded proof map
 
@@ -527,11 +539,11 @@ Then Yang-Mills closure holds on admissible class `A`:
 - continuation + restart capture -> global scale persistence,  
 - first-failure compactness + rigidity -> contradiction,  
 - reconstruction + determining lock -> endpoint uniqueness,  
-- spectral floor transfer -> positive mass gap.
+- spectral floor transfer -> positive mass gap under `YM_EQ2`.
 
 ### 10.2 Claim scope
 
-This theorem is the claim for the stated admissible class with explicit in-paper assumptions.
+This theorem is the claim for the stated admissible class. The stronger standard physical statement is conditional on the explicit bridge assumptions `YM_EQ1` and `YM_EQ2`.
 
 ---
 
@@ -623,7 +635,8 @@ Current status is:
 Therefore current claim is:
 
 - complete admissible-class theorem architecture and audit pipeline,  
-- admissible-class strict gate closure achieved in current local snapshot.
+- admissible-class strict gate closure achieved in current local snapshot,
+- standard physical Yang-Mills existence/mass-gap statement still explicitly uses bridge assumptions `YM_EQ1` and `YM_EQ2`.
 
 ---
 
@@ -636,6 +649,8 @@ The `EG1–EG4` chain is embedded in this manuscript and mirrored in `notes/`.
 ### 16.2 Embedded identification bridge
 
 Determining-class bridge is documented in Appendix E and mirrored in `notes/IDENTIFICATION_BRIDGE.md`.
+
+Appendix `E` records the lock persistence and bridge assumptions. It does not silently convert `YM_EQ1` or `YM_EQ2` into in-paper canonical-lane theorems.
 
 ### 16.3 Embedded reproducibility pack
 
@@ -944,13 +959,13 @@ QED.
 If two reconstructed representatives agree on `C_det` under lock equations, they are canonically identified.
 
 **Proof.**
-`C_det` is assumed determining on the admissible reconstructed class.
+This is exactly bridge assumption `YM_EQ1`: `C_det` is assumed determining on the admissible reconstructed class.
 Equality on `C_det` implies equality of representatives.
 QED.
 
 ### E.4 Proposition E3 (raw positivity-to-gap inequality)
 
-Assume there exist `c_gap > 0`, `e_gap >= 0` such that:
+This is bridge assumption `YM_EQ2`. Assume there exist `c_gap > 0`, `e_gap >= 0` such that:
 
 `m_gap_lower^(raw) >= c_gap * rho_os^(raw) - e_gap`.
 
@@ -984,9 +999,7 @@ Strict mode requires theorem-level `eps_coh = 0` for `Y_G6 = PASS`.
 
 ### E.8 Bridge closure note
 
-Determining-class adequacy, transfer inequality (`E3`), and constant derivation
-are treated as fixed by this in-paper theorem chain; no additional bridge
-exclusions are left in this manuscript layer.
+Canonical-lane closure is complete once the admissible-class theorem chain and gate package pass. The stronger standard physical statement still explicitly uses bridge assumptions `YM_EQ1` and `YM_EQ2`; this appendix records them rather than silently absorbing them into the lane theorem.
 
 ---
 

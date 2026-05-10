@@ -2,7 +2,7 @@
 
 ## Claim Scope
 - Canonical-lane claim: inside the `manifold_constrained` lane, if the theorem chain in this repository holds and the guard certificate passes, the repository-level Yang-Mills closure claim is satisfied.
-- Classical mapping claim: carried by the in-repo bridge theorems; independent validation is performed via public reruns and expert review.
+- Physical/classical bridge claim: the standard Yang-Mills existence + mass-gap statement additionally uses the explicit bridge assumptions `YM_EQ1` and `YM_EQ2` from Section `6.4` and Appendix `E`.
 
 ## Theorem Dependency Chain
 1. `EG1`: projected coercivity / structural floor.
@@ -10,6 +10,8 @@
 3. `EG3`: finite-restart spacing (no Zeno cascade).
 4. `EG4`: compactness-rigidity and endpoint identification.
 5. Scalar closure: `Y_G1, Y_G2, Y_G3, Y_G4, Y_G5, Y_G6, Y_GM` all `PASS`.
+6. `YM_EQ1`: determining-class adequacy on the reconstructed admissible class.
+7. `YM_EQ2`: positivity-to-gap transfer inequality on the reconstructed class.
 
 Primary files:
 - `paper/YANG_MILLS_MASS_GAP_PREPRINT.md`

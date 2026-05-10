@@ -5,6 +5,13 @@ Canonical Lane research workspace for the Millennium Problem:
 
 the existence of a nontrivial quantum Yang–Mills theory on `R^4` with a positive mass gap.
 
+## Claim Scope
+
+- Canonical-lane theorem claim: the manuscript closes the admissible-class theorem lane recorded in the paper, bridge note, and reproducibility pack.
+- Physical bridge claim: the standard Yang–Mills existence/mass-gap statement additionally uses two explicit bridge assumptions from the main paper:
+  - `YM_EQ1`: the determining class `C_det` is genuinely determining on the reconstructed admissible class,
+  - `YM_EQ2`: the raw positivity-to-gap transfer inequality holds with explicit `c_gap > 0`, `e_gap >= 0`.
+
 ## Main Manuscript
 
 - [paper/YANG_MILLS_MASS_GAP_PREPRINT.md](paper/YANG_MILLS_MASS_GAP_PREPRINT.md)
