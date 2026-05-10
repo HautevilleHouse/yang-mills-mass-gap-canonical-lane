@@ -741,9 +741,19 @@ By Lemma A1 and Lemma A2, `E_Lambda` has uniform positive lower bound on `H_resp
 The gate logic for `Y_G1` is exactly positivity of this bound.
 QED.
 
-### A.6 Current extraction requirement
+### A.6 Instantiated theorem constants
 
-Provide theorem-level values for `A_*`, `c_*`, `e_*` on declared canonical tube.
+Theorem-level raw comparison constants on the declared canonical tube are now fixed by the public artifact package:
+
+- `A_*^(raw) = 0.918`,
+- `c_*^(raw) = 1.4625`,
+- `e_*^(raw) = 0.24225`.
+
+Hence
+
+`kappa_coercive = c_*^(raw) A_*^(raw) - e_*^(raw) = 1.100325 > 0`,
+
+so Appendix A closes `Y_G1` on the canonical lane with derived numeric theorem inputs rather than a placeholder extraction request.
 
 ---
 

@@ -59,7 +59,7 @@
     },
     {
       "path": "paper/YANG_MILLS_MASS_GAP_PREPRINT.md",
-      "sha256": "f2475fca337061ab7c14eaaf7fee05b723a5e0da26ccc9697d052c44239d638a"
+      "sha256": "06fb2d84d7930f117e07a50fa42648088aebbc362a473344f345772b68e185de"
     },
     {
       "path": "repro/REPRO_PACK.md",
@@ -98,7 +98,7 @@
       "sha256": "e184337d1f5e65aa09563244acb95f90995fd6eb6583df41aebc1a4dfb0b3ca9"
     }
   ],
-  "generated_utc": "2026-05-10T05:23:21Z",
+  "generated_utc": "2026-05-10T08:39:35Z",
   "lane": "manifold_constrained",
   "runtime_certificate_path": "repro/certificate_runtime.json",
   "schema_version": "2026-03-05"
