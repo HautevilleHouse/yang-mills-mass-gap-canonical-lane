@@ -758,7 +758,7 @@ QED.
 
 ### A.6 Instantiated theorem constants
 
-Theorem-level raw comparison constants on the declared canonical tube are now fixed by the public artifact package:
+Theorem-level raw comparison constants on the declared canonical tube are now fixed by the published theorem package:
 
 - `A_*^(raw) = 0.918`,
 - `c_*^(raw) = 1.4625`,
