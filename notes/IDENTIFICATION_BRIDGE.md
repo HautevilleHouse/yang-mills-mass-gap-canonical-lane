@@ -71,4 +71,4 @@ This value is promoted to theorem-level in the constants registry for strict mod
 
 ## Status
 
-This note discharges lock persistence and records the conditional uniqueness step used by the physical endpoint statement. The standard Yang-Mills existence/mass-gap claim still explicitly uses `YM_EQ1` and `YM_EQ2`; canonical-lane closure does not silently absorb them.
+This note discharges lock persistence and records the conditional uniqueness step used by the physical endpoint statement. The standard Yang-Mills existence/mass-gap claim still explicitly uses `YM_EQ1` and `YM_EQ2`; canonical-lane closure keeps them explicit.
