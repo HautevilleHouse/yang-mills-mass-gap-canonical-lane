@@ -70,7 +70,7 @@ The canonical endpoint objects are tied to the standard problem-side target thro
 
 `notes/IDENTIFICATION_BRIDGE.md` records this bridge layer in ordinary mathematical language.
 
-### 1.1C Verification surface
+### 1.1C Audit surface
 A reviewer can check this claim on four surfaces:
 
 1. the standard target statement in Section `1.1`,
